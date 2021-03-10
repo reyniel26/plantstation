@@ -1,0 +1,10 @@
+Be sure the user account for plantstationdbms is created
+
+Username: PlantStationDBMS
+Password: Plantstation2020
+
+If not exist
+
+go to documentation see the guide or run this script in sql
+
+CREATE USER 'PlantStationDBMS'@'%' IDENTIFIED VIA mysql_native_password USING '***';GRANT ALL PRIVILEGES ON *.* TO 'PlantStationDBMS'@'%' REQUIRE NONE WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;CREATE DATABASE IF NOT EXISTS `PlantStationDBMS`;GRANT ALL PRIVILEGES ON `PlantStationDBMS`.* TO 'PlantStationDBMS'@'%';GRANT ALL PRIVILEGES ON `PlantStationDBMS\_%`.* TO 'PlantStationDBMS'@'%';
